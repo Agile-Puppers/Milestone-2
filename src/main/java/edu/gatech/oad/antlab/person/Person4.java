@@ -32,7 +32,7 @@ public class Person4 {
   private String calc(String input) {
     //Completed by Jeremy Winter
     String result = "";
-    for (char c : input) {
+    for (char c : input.toCharArray()) {
       result += (c + 1);
     }
     return result;
