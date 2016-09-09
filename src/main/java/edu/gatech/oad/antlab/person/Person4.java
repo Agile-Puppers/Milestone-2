@@ -33,7 +33,7 @@ public class Person4 {
     //Completed by Jeremy Winter
     String result = "";
     for (char c : input.toCharArray()) {
-      result += (c + 1);
+      result += (char)(1 + c);
     }
     return result;
   }
