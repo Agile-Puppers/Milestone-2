@@ -30,8 +30,16 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return input.substring(input.length() / 2) + input.substring(0, input.length() / 2);
+	  String output = "";
+      for (int i = 0; i < input.length(); ++i) {
+          boolean prepend = (int) (Math.random() * 2) == 0 ? true : false;
+          if (prepend) {
+              output = input.charAt(i) + output;
+          } else {
+              output += input.charAt(i);
+          }
+      }
+	  return output;
 	}
 	/**
 	 * Return a string rep of this object
